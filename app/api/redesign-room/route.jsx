@@ -4,6 +4,8 @@ import Replicate from "replicate";
 import { createClient } from "@/lib/supabase/server";
 import { db } from "@/config/db";
 import { AiGeneratedImages } from "@/config/schema";
+export const dynamic = "force-dynamic"
+
 
 const replicate = new Replicate({
   auth: process.env.REPLICATE_API_KEY,
